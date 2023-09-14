@@ -1,0 +1,40 @@
+{
+  "name": "caja_mayorista_2023",
+  "version": "1.0.0",
+  "description": "ingreso caja de ventas",
+  "main": "y",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-portable": "electron-builder --win portable --mac zip",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "Javier Falk",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-forge": "^5.2.4",
+    "electron": "17.1.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "electron-compile": "^6.4.4",
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "build": {
+    "appId": "caja_mayorista_2023",
+    "productName": "Aplicacion Ingreso",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "portable"
+    }
+  }
+}
